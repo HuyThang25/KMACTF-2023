@@ -1,3 +1,6 @@
+![image](https://github.com/HuyThang25/KMACTF-2023/assets/93728466/885f5fb6-e3b3-4b6d-857d-f19cd1a96beb)
+
+![image](https://github.com/HuyThang25/KMACTF-2023/assets/93728466/09297c2d-63b3-45c3-8a9d-fb9c5c856bbc)
 
 ## Phân tích
 Ta tìm đến file `.bash_history` để xem lịch sử cmd đã được thực thi trong đường dẫn`\home\debian\.bash_history`.
