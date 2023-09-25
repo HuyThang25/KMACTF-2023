@@ -54,4 +54,6 @@ iv = MD5.new(('KTMM' + '-' + "C:\Program Files\Common Files\Microsoft Shared\Tex
 decryption(filename, key, iv)
 ```
 
-Sau khi chạy xong sẽ ra một file pdf chứa QR. Flag: KMACTF{Wh3n_Pl4y1n9_CTF,_pl@Y_w1tH_4ll_Ur_h34r7}
+Sau khi chạy xong sẽ ra một file pdf chứa QR. 
+
+Flag: KMACTF{Wh3n_Pl4y1n9_CTF,_pl@Y_w1tH_4ll_Ur_h34r7}
