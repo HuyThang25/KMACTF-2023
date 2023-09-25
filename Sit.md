@@ -1,8 +1,11 @@
 ![image](https://github.com/HuyThang25/KMACTF-2023/assets/93728466/59096590-e5f9-40df-9cbb-d5dd272c2d57)
 
 Đọc decription mình nghĩ ngay đến Malware Persistence. Khi gặp phải dạng này ta thường kiểm tra các nơi sau:Autostart Registry Key, Windows Services, Scheduled Tasks, WMI Event Consumers. Ở đâu mình tìm được một shortcuts đáng nghi trong `[root]\Users\admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`. Việc tạo persistence trong thư mục này không yêu cầu quyền quản trị, vì lý do đó mà nó thường bị lợi dụng khá nhiều, cả trong những giai đoạn đầu của cuộc tấn công tinh vi. Bất kỳ shortcuts nào đc tạo trong folder này đều sẽ thực thi khi người dùng đăng nhặp.
+
 ![image](https://github.com/HuyThang25/KMACTF-2023/assets/93728466/bc7c576e-0e91-49ae-8147-1435496b9ade)
+
 Mình xem trong Target thì thấy nó chạy lệnh sau `C:\Users\admin\AppData\LocalLow\Microsoft\CryptnetUrlCache\Content\datahost.exe "C:\Program Files\Common Files\Microsoft Shared\TextConv\tailieu"`
+
 ![image](https://github.com/HuyThang25/KMACTF-2023/assets/93728466/633c8979-d9cd-4647-b75a-4eb0839cbace)
 
 Vào các thư mục trên để tìm đến file thì được file `datahost.exe` nhưng file `tailieu` thì không thấy thay vào đó là file `tailieu.huhu`
