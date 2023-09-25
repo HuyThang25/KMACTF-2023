@@ -18,9 +18,9 @@ File `datahost.exe` là file thực thi được viết bằng ngôn ngữ pytho
 
 ![image](https://github.com/HuyThang25/KMACTF-2023/assets/93728466/4b9b004d-71c7-4379-944c-fe954e33d54d)
 
-Đoạn code trên mã hoá `aes-cbc` file được truyền vào và lưu vào file mới thêm phần mở rộng `.huhu`. Với key được lấy random theo seed là thời gian tạo file `tailieu`, iv là computer name (hàm `platform.node()`) + thư mục chứ file `tailieu`. Bắt tay vào tìm dữ liệu để decrypt thôi.
+Đoạn code trên mã hoá `aes-cbc` file được truyền vào và lưu vào file mới thêm phần mở rộng `.huhu`. Với key được lấy random theo seed là thời gian tạo file `tailieu`, iv là computer name (hàm `platform.node()`) + thư mục chứ file `tailieu`. 
 
-Tìm thời gian tạo file `tailieu` thì mình sử dụng xem trong file `$MFT`. Đây là file chứa thông tin quản lý về tất cả các tệp tin và thư mục trên một ổ đĩa hoặc phân vùng NTFS. Dùng tool [MFTECmd](https://www.sans.org/tools/mftecmd/) để xem file mình tìm được thời gian tạo là `8/24/2023  5:08:53 PM` chuyển sang timestamp là 1692896933 (GMT)
+Tìm thời gian tạo file `tailieu` thì mình xem trong file `$MFT`. Đây là file chứa thông tin quản lý về tất cả các tệp tin và thư mục trên một ổ đĩa hoặc phân vùng NTFS. Dùng tool [MFTECmd](https://www.sans.org/tools/mftecmd/) để xem file thì tìm được thời gian tạo là `8/24/2023  5:08:53 PM` chuyển sang timestamp là 1692896933 (GMT)
 
 ![image](https://github.com/HuyThang25/KMACTF-2023/assets/93728466/c52bc589-62e6-4733-8a28-2cb4f6ebab34)
 
