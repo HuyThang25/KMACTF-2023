@@ -36,7 +36,8 @@ Tiếp theo là xoá 2 file `/tmp/temp.pcap` và `fl.kma` ở 2 câu lệnh cu�
 
 ## Solution
 
-Xâu chuỗi hết những sự kiện trên lại, mình tìm ra hướng giải quyết sau. Do chương trình chỉ shuffle thứ tự mà không thay đổi thời gian các gói tin nên ta có thể sắp xếp lại các gói tin ở file `chaos.pcap` thì sẽ được file `temp.pcap` ban đầu.
+Xâu chuỗi hết những sự kiện trên lại, mình tìm ra hướng giải quyết sau. Do chương trình chỉ shuffle thứ tự mà không thay đổi thời gian các gói tin nên ta có thể sắp xếp lại  các gói tin ở file `chaos.pcap` theo thời gian thì sẽ được file `temp.pcap` ban đầu.
+
 Mình sử dụng tshark để dump data trong các gói tin và sử dụng các tool sau để sắp xếp:
 
 ```
