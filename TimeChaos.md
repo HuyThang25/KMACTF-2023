@@ -8,9 +8,10 @@ Khi làm các bài liên quan đến linux, bước đầu tiên mình thường
 ![image](https://github.com/HuyThang25/KMACTF-2023/assets/93728466/c66befc0-ae1e-4357-8f27-9c0a0834e5bf)
 
 Đầu tiên thư viện chạy câu lệnh `remina` sau đó là tải `python`, thư viện `scapy` và chạy file `pcapgen.py`. Khi xem bên trong thư mục hiện tại thì thấy có file `pcapgen.py`.
+
 ![image](https://github.com/HuyThang25/KMACTF-2023/assets/93728466/8767ff9a-b862-4726-b91e-5b9897637af7)
 
-.Muốn tìm file thực thi của câu lệnh thì ta vào trong thư mục /bin ( đây là nơi chứa các file thực thi tương ứng với câu lệnh được gọi).
+Muốn tìm file thực thi của câu lệnh thì ta vào trong thư mục /bin ( đây là nơi chứa các file thực thi tương ứng với câu lệnh được gọi).
 
 ![image](https://github.com/HuyThang25/KMACTF-2023/assets/93728466/3d2bd2bb-b9f0-47f8-814e-dd6362033f55)
 
